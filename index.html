@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Alex Rivera — Full-Stack Engineer & Product Architect. Building high-performance web applications, enterprise systems, and responsive digital products.">
+  <meta name="keywords" content="Portfolio, Full-Stack Engineer, Product Architect, Enterprise Web Apps, TypeScript, React, Next.js, Node.js, Cloud Architecture">
+  <meta name="author" content="Alex Rivera">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alex Rivera | Executive Full-Stack Engineer & Product Architect">
+  <meta property="og:description" content="Architecting high-performance web systems and digital products that scale. Explore verified client projects, technical case studies, and open-source contributions.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alex Rivera | Executive Portfolio">
+  <meta name="twitter:description" content="Crafting responsive web experiences, APIs, and client-first digital products.">
+  
+  <title>Alex Rivera | Executive Full-Stack Engineer & Product Architect</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Preload fonts for zero layout shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Ambient 3D Aurora Mesh & Grid Depth Overlay -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="aurora-orb orb-primary"></div>
+    <div class="aurora-orb orb-secondary"></div>
+    <div class="aurora-orb orb-tertiary"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Skip to main content for keyboard accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Announcement / Availability Banner -->
+  <div class="announcement-bar" role="region" aria-label="Current Availability">
+    <div class="container announcement-content">
+      <span class="status-indicator">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="status-text"><strong>Executive Availability:</strong> Open for High-Impact Roles, Selected Contracts &amp; Advisory</span>
+      </span>
+      <a href="#why-hire-me" class="announcement-cta">Why Work Together</a>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-identity" aria-label="Alex Rivera Home">
+        <div class="brand-monogram">AR</div>
+        <div class="brand-details">
+          <span class="brand-name">Alex Rivera</span>
+          <span class="brand-title">Full-Stack Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Capabilities</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Quick Perspective Switcher -->
+        <button type="button" class="btn-theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Profile Customizer Trigger for Teenlancers -->
+        <button type="button" class="btn-secondary btn-sm customize-trigger" id="customizer-open-btn" aria-label="Customize this portfolio with your own details" title="Make this portfolio yours!">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 20h9"></path>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+          </svg>
+          <span>Customize Portfolio</span>
+        </button>
+
+        <a href="#contact" class="btn-secondary btn-sm header-cta">Hire Me</a>
+
+        <!-- Mobile Drawer Hamburger -->
+        <button type="button" class="mobile-menu-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav" hidden>
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#skills" class="mobile-link">Capabilities</a></li>
+          <li><a href="#experience" class="mobile-link">Experience</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="#contact" class="btn-primary btn-block">Hire Me / Inquire</a>
+          <button type="button" class="btn-secondary btn-block" id="mobile-customize-btn">Customize This Template</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <!-- Live badge -->
+          <div class="hero-badge">
+            <span class="badge-icon">💎</span>
+            <span>Enterprise-Grade Full-Stack Engineer &bull; Modern Web Architect &bull; Open Source</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Architecting high-performance web systems and digital products that scale.
+          </h1>
+
+          <p class="hero-subheadline">
+            I partner with high-growth tech companies, ambitious startups, and enterprise teams to engineer mission-critical web applications, sub-second APIs, and frictionless user experiences with uncompromised polish.
+          </p>
+
+          <!-- Action buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary btn-lg">Explore Selected Work</a>
+            <a href="#contact" class="btn-secondary btn-lg">Initiate Consultation</a>
+          </div>
+
+          <!-- Quick Proof Points & Metrics Strip -->
+          <div class="proof-metrics-grid">
+            <div class="metric-card">
+              <span class="metric-value">$1.5M+</span>
+              <span class="metric-label">Client Revenue Impact</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">100/100</span>
+              <span class="metric-label">Lighthouse Performance</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">99.98%</span>
+              <span class="metric-label">Production SLA Uptime</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">&lt; 48h</span>
+              <span class="metric-label">Rapid MVP Turnaround</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Aside / Profile Card with Dynamic Focus Switcher & 3D Tilt -->
+        <div class="hero-aside">
+          <div class="hero-profile-card tilt-card" data-tilt>
+            <div class="profile-header">
+              <div class="avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Alex Rivera" class="avatar-image" width="100" height="100">
+                <span class="avatar-online-status" title="Online and ready to collaborate"></span>
+              </div>
+              <div class="profile-meta">
+                <span class="profile-name">Alex Rivera</span>
+                <span class="profile-role">Full-Stack &amp; Product Architect</span>
+                <span class="profile-location">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Remote / Global (UTC-5)
+                </span>
+              </div>
+            </div>
+
+            <!-- Audience Perspective Switcher -->
+            <div class="perspective-box">
+              <span class="perspective-title">What are you looking for?</span>
+              <div class="perspective-tabs" role="tablist" aria-label="Perspective View Modes">
+                <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-perspective="internship">
+                  Internship Recruiter
+                </button>
+                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-perspective="freelance">
+                  Enterprise Client
+                </button>
+              </div>
+
+              <!-- Perspective Dynamic Content -->
+              <div class="perspective-body" id="perspective-content">
+                <div class="perspective-pane active" id="pane-internship">
+                  <p class="pane-summary">
+                    <strong>Focus:</strong> Robust distributed systems, TypeScript/React, zero-compromise testing, and CI/CD pipelines.
+                  </p>
+                  <div class="pane-actions">
+                    <a href="#experience" class="link-subtle">Review Academic &amp; Project Track Record</a>
+                  </div>
+                </div>
+
+                <div class="perspective-pane" id="pane-freelance" hidden>
+                  <p class="pane-summary">
+                    <strong>Focus:</strong> Turn-key product execution, sub-second load times, Stripe billing, and asynchronous video standups.
+                  </p>
+                  <div class="pane-actions">
+                    <a href="#contact" class="link-subtle">Estimate Project Scope</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick contact snippet in card -->
+            <div class="profile-footer">
+              <div class="profile-rate">
+                <span class="rate-label">Next availability</span>
+                <span class="rate-val">Starting next week</span>
+              </div>
+              <button type="button" class="btn-copy-email" id="quick-copy-email" data-email="alex.rivera.dev@example.com">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Hire a Teenlancer / Early-Career Talent Section -->
+    <section class="section-advantage" id="why-hire-me">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">The Competitive Edge</span>
+          <h2 class="section-title">Why work with a hungry, early-career builder?</h2>
+          <p class="section-desc">
+            Traditional agencies charge huge retainer fees with slow turnaround times. Here is how working with a dedicated modern freelancer gives you speed and top-tier execution.
+          </p>
+        </div>
+
+        <div class="advantage-grid">
+          <div class="advantage-card tilt-card" data-tilt>
+            <div class="advantage-icon">⚡</div>
+            <h3 class="advantage-title">High Speed, Zero Bureaucracy</h3>
+            <p class="advantage-text">
+              Direct access to the developer writing your code. No account managers, endless meetings, or multi-week handoffs. Feature requests and fixes deploy the same day.
+            </p>
+          </div>
+
+          <div class="advantage-card tilt-card" data-tilt>
+            <div class="advantage-icon">🛠️</div>
+            <h3 class="advantage-title">Modern Tooling & Modern Web Standards</h3>
+            <p class="advantage-text">
+              Built with contemporary best practices: responsive CSS Grid, semantic accessibility, TypeScript safety, edge hosting, and Core Web Vitals optimization.
+            </p>
+          </div>
+
+          <div class="advantage-card tilt-card" data-tilt>
+            <div class="advantage-icon">📈</div>
+            <h3 class="advantage-title">Relentless Drive & Pride of Craft</h3>
+            <p class="advantage-text">
+              Every project is a cornerstone case study for my career. I overdeliver on performance, test on real mobile hardware, and obsess over small details.
+            </p>
+          </div>
+
+          <div class="advantage-card tilt-card" data-tilt>
+            <div class="advantage-icon">💡</div>
+            <h3 class="advantage-title">Cost-Effective Scalability</h3>
+            <p class="advantage-text">
+              Get agency-grade product polish at rates that respect startup and small-business budgets, with crystal-clear milestone-based pricing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects & Case Studies -->
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="projects-header-row">
+          <div>
+            <span class="section-eyebrow">Verified Proof & Work</span>
+            <h2 class="section-title">Featured Projects & Case Studies</h2>
+            <p class="section-desc">
+              Real-world software built for clients, open-source communities, and competitive hackathons.
+            </p>
+          </div>
+
+          <!-- Category filter buttons -->
+          <div class="project-filters" role="group" aria-label="Filter Projects by Category">
+            <button type="button" class="filter-btn active" data-filter="all">All (6)</button>
+            <button type="button" class="filter-btn" data-filter="web-app">Web Apps</button>
+            <button type="button" class="filter-btn" data-filter="client">Client Work</button>
+            <button type="button" class="filter-btn" data-filter="open-source">Open Source</button>
+          </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Project 1: PeakMetrics Analytics -->
+          <article class="project-card tilt-card" data-tilt data-category="web-app" data-id="peakmetrics">
+            <div class="project-visual">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="PeakMetrics Dashboard preview" class="project-thumbnail" loading="lazy">
+              <div class="project-badges">
+                <span class="badge-tag">Full-Stack SaaS</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-client">SaaS Product</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-name">PeakMetrics Analytics Platform</h3>
+              <p class="project-summary">
+                Privacy-friendly website analytics platform processing real-time visitor event streams with sub-50ms query responses and zero cookies.
+              </p>
+              
+              <!-- Impact metric callout -->
+              <div class="project-impact">
+                <span class="impact-icon">📊</span>
+                <span class="impact-text">Handled 120k monthly events with &lt;180ms dashboard latency</span>
+              </div>
+
+              <!-- Tech tags -->
+              <div class="tech-stack-list">
+                <span class="tech-tag">Next.js 15</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">ClickHouse</span>
+              </div>
+
+              <!-- Actions -->
+              <div class="project-actions">
+                <button type="button" class="btn-action-view" data-modal="peakmetrics">
+                  Read Case Study
+                </button>
+                <div class="project-ext-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View source code on GitHub" title="View Source Code">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                  <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Visit live website" title="Live Preview">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Artisan Bakehouse E-commerce -->
+          <article class="project-card tilt-card" data-tilt data-category="client" data-id="artisanbake">
+            <div class="project-visual">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Artisan Bakery store preview" class="project-thumbnail" loading="lazy">
+              <div class="project-badges">
+                <span class="badge-tag">Client E-Commerce</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-client">Artisan Bakery Co.</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-name">Artisan Bakehouse Direct-to-Consumer Shop</h3>
+              <p class="project-summary">
+                Custom online ordering store for a regional bakery featuring automated pickup scheduling, dynamic inventory syncing, and frictionless Stripe checkout.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-icon">📈</span>
+                <span class="impact-text">+34% online sales lift in first 30 days &bull; 0 checkout crashes</span>
+              </div>
+
+              <div class="tech-stack-list">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">SendGrid</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-action-view" data-modal="artisanbake">
+                  Read Case Study
+                </button>
+                <div class="project-ext-links">
+                  <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Visit client store" title="Live Client Site">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: SwiftForm CLI & UI Component Toolkit -->
+          <article class="project-card tilt-card" data-tilt data-category="open-source" data-id="swiftform">
+            <div class="project-visual">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80" alt="Code editor preview" class="project-thumbnail" loading="lazy">
+              <div class="project-badges">
+                <span class="badge-tag">Open Source</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-client">Developer Tool</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-name">SwiftForm: Headless Form State Engine</h3>
+              <p class="project-summary">
+                Ultra-lightweight (1.8kb gzipped), zero-dependency form validation and state machine library with built-in accessibility compliance and Zod schema support.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-icon">⭐</span>
+                <span class="impact-text">450+ GitHub Stars &bull; 8,200+ monthly npm downloads</span>
+              </div>
+
+              <div class="tech-stack-list">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">NPM Package</span>
+                <span class="tech-tag">Vitest</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">100% Test Coverage</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-action-view" data-modal="swiftform">
+                  Read Case Study
+                </button>
+                <div class="project-ext-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View SwiftForm on GitHub" title="GitHub Repository">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: MedAssist Triage Portal -->
+          <article class="project-card tilt-card" data-tilt data-category="web-app" data-id="medassist">
+            <div class="project-visual">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80" alt="Healthcare portal preview" class="project-thumbnail" loading="lazy">
+              <div class="project-badges">
+                <span class="badge-tag">HealthTech</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-client">Civic Hackathon 1st Place</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-name">MedAssist Clinic Patient Intake Portal</h3>
+              <p class="project-summary">
+                Accessible, multilingual patient symptom self-check and queue coordination dashboard built for free community clinics with offline support.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-icon">🏆</span>
+                <span class="impact-text">1st Prize among 42 teams &bull; Cut intake queue time by 45%</span>
+              </div>
+
+              <div class="tech-stack-list">
+                <span class="tech-tag">React PWA</span>
+                <span class="tech-tag">Service Workers</span>
+                <span class="tech-tag">IndexedDB</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">WCAG AAA</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-action-view" data-modal="medassist">
+                  Read Case Study
+                </button>
+                <div class="project-ext-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View repository on GitHub">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Solis Solar Landing Page & Lead Funnel -->
+          <article class="project-card tilt-card" data-tilt data-category="client" data-id="solissolar">
+            <div class="project-visual">
+              <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=700&q=80" alt="Clean energy solar roof preview" class="project-thumbnail" loading="lazy">
+              <div class="project-badges">
+                <span class="badge-tag">Client Conversion Page</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-client">Solis Renewable Energy</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-name">Solis Solar Quote Calculator & Funnel</h3>
+              <p class="project-summary">
+                High-converting lead generation landing page featuring an interactive savings estimator that dynamically computes roof kilowatt potential based on postal code.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-icon">⚡</span>
+                <span class="impact-text">Conversion increased from 2.1% to 6.4% &bull; 99 Mobile Performance</span>
+              </div>
+
+              <div class="tech-stack-list">
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">Formspree</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-action-view" data-modal="solissolar">
+                  Read Case Study
+                </button>
+                <div class="project-ext-links">
+                  <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Visit Solis landing page">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: GitPulse Developer Activity Visualizer -->
+          <article class="project-card tilt-card" data-tilt data-category="open-source" data-id="gitpulse">
+            <div class="project-visual">
+              <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=700&q=80" alt="Code graph terminal preview" class="project-thumbnail" loading="lazy">
+              <div class="project-badges">
+                <span class="badge-tag">Open Source CLI</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-client">Personal / Open Tool</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-name">GitPulse: Repo Health & PR Velocity CLI</h3>
+              <p class="project-summary">
+                Terminal CLI and web dashboard diagnosing code review bottlenecks, review response delays, and commit distribution across remote engineering teams.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-icon">🚀</span>
+                <span class="impact-text">Used by 14 collegiate teams &amp; independent developers</span>
+              </div>
+
+              <div class="tech-stack-list">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">GitHub REST/GraphQL API</span>
+                <span class="tech-tag">Commander</span>
+                <span class="tech-tag">Chart.js</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-action-view" data-modal="gitpulse">
+                  Read Case Study
+                </button>
+                <div class="project-ext-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View GitPulse on GitHub">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills & Capabilities Matrix -->
+    <section class="section-skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Proven Stack</span>
+          <h2 class="section-title">Technical Capabilities & Production Stack</h2>
+          <p class="section-desc">
+            No fictional "95% proficiency" bars. Here is exactly what I build with and how I use each technology in real software.
+          </p>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Column 1: Frontend & UI Engineering -->
+          <div class="skill-category-card tilt-card" data-tilt>
+            <div class="skill-cat-header">
+              <span class="cat-icon">🎨</span>
+              <div>
+                <h3 class="cat-title">Frontend & UI Engineering</h3>
+                <span class="cat-subtitle">Responsive, accessible, fast</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">TypeScript / JavaScript (ESNext)</span>
+                  <span class="skill-level">Primary Language</span>
+                </div>
+                <p class="skill-desc">Strict typing, asynchronous patterns, functional programming, DOM performance.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">React & Next.js 15 (App Router)</span>
+                  <span class="skill-level">Production</span>
+                </div>
+                <p class="skill-desc">Server components, SSR/SSG caching, custom hooks, dynamic route handlers.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Modern CSS, Tailwind, & Mobile UI</span>
+                  <span class="skill-level">Expertise</span>
+                </div>
+                <p class="skill-desc">Fluid clamp sizing, CSS Grid/Flexbox, container queries, dark mode, zero jank.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Web Accessibility & WCAG 2.1 AA</span>
+                  <span class="skill-level">Core Standard</span>
+                </div>
+                <p class="skill-desc">Semantic HTML, screen reader attributes, focus traps, keyboard navigation.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Backend, APIs & Systems -->
+          <div class="skill-category-card tilt-card" data-tilt>
+            <div class="skill-cat-header">
+              <span class="cat-icon">⚙️</span>
+              <div>
+                <h3 class="cat-title">Backend, APIs & Cloud</h3>
+                <span class="cat-subtitle">Secure, scalable, pragmatic</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Node.js, Express & FastAPI (Python)</span>
+                  <span class="skill-level">REST & WebSockets</span>
+                </div>
+                <p class="skill-desc">Clean routing, rate limiting, token authentication (JWT/OAuth), streaming responses.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">PostgreSQL, Prisma & Redis</span>
+                  <span class="skill-level">Databases</span>
+                </div>
+                <p class="skill-desc">Relational schema design, indexed queries, transactions, fast cache invalidation.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Third-Party Integrations</span>
+                  <span class="skill-level">Payment & Comms</span>
+                </div>
+                <p class="skill-desc">Stripe Checkout/Webhooks, SendGrid, Supabase Auth, Google OAuth, AWS S3 uploads.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Git, GitHub Actions & Vercel</span>
+                  <span class="skill-level">DevOps & CI</span>
+                </div>
+                <p class="skill-desc">Automated lint/test workflows, PR previews, semantic versioning, edge deployments.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Freelance & Client Workflow -->
+          <div class="skill-category-card tilt-card" data-tilt>
+            <div class="skill-cat-header">
+              <span class="cat-icon">💼</span>
+              <div>
+                <h3 class="cat-title">Freelance &amp; Delivery Workflow</h3>
+                <span class="cat-subtitle">Reliable, clear, professional</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Transparent Scoping & Timelines</span>
+                  <span class="skill-level">Client First</span>
+                </div>
+                <p class="skill-desc">Detailed milestones, written change requests, and clear deliverable checklists.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Loom Video Updates & Async Demos</span>
+                  <span class="skill-level">Daily / Weekly</span>
+                </div>
+                <p class="skill-desc">Recorded walkthroughs so stakeholders stay informed without schedule conflicts.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">SEO & Core Web Vitals Auditing</span>
+                  <span class="skill-level">Growth Focus</span>
+                </div>
+                <p class="skill-desc">Structured metadata, OpenGraph cards, image optimization, schema markup.</p>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item-top">
+                  <span class="skill-name">Handover Documentation & Support</span>
+                  <span class="skill-level">Long-Term Trust</span>
+                </div>
+                <p class="skill-desc">Full markdown READMEs, environment configuration guides, and 30-day bug warranty.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience, Freelance Track Record & Milestones -->
+    <section class="section-experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Track Record</span>
+          <h2 class="section-title">Experience & Milestones</h2>
+          <p class="section-desc">
+            A chronological timeline of freelance client deliverables, internships, and technical leadership roles.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2025 &ndash; Present</span>
+                <span class="timeline-badge freelance-badge">Independent Contractor</span>
+              </div>
+              <h3 class="timeline-role">Freelance Web Engineer &amp; UI Consultant</h3>
+              <span class="timeline-org">Self-Employed &bull; Remote</span>
+              <p class="timeline-summary">
+                Partnering directly with seed startups, e-commerce brands, and local service providers to engineer fast web applications and landing pages that drive measurable conversions.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Shipped 12+ responsive client sites with 100% on-time milestone delivery.</li>
+                <li>Boosted client average mobile Lighthouse scores from 54 to 98+, reducing bounce rates.</li>
+                <li>Implemented secure payment gateways via Stripe generating over $65k in client transaction volume.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Summer 2025</span>
+                <span class="timeline-badge intern-badge">Engineering Internship</span>
+              </div>
+              <h3 class="timeline-role">Junior Frontend Engineering Intern</h3>
+              <span class="timeline-org">CloudSync Labs &bull; Remote / Hybrid</span>
+              <p class="timeline-summary">
+                Joined the core product team building internal operations dashboards and customer telemetry tools.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Migrated 14 legacy form pages to React hook forms with Zod validation, eliminating runtime type errors.</li>
+                <li>Authored 40+ unit and integration tests using Vitest and Testing Library, elevating test coverage by 18%.</li>
+                <li>Participated in daily standups, code reviews, and sprint planning following Agile/Scrum.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 &ndash; 2025</span>
+                <span class="timeline-badge community-badge">Leadership &amp; Community</span>
+              </div>
+              <h3 class="timeline-role">Tech Lead &amp; Hackathon Organizer</h3>
+              <span class="timeline-org">Student Developer Guild &bull; Metro Region</span>
+              <p class="timeline-summary">
+                Mentored 60+ younger students and teen coders in web development fundamentals; led organizing committee for 120-participant regional high school hackathon.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Architected the official hackathon submission portal handling registration, judging, and live scoring.</li>
+                <li>Taught weekend workshops on Git, CSS Flexbox/Grid, and deploying web applications to Vercel and Netlify.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials & Client Reviews -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Social Proof</span>
+          <h2 class="section-title">What clients and mentors say</h2>
+          <p class="section-desc">
+            Direct feedback from entrepreneurs and senior engineers who have worked with me.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card tilt-card" data-tilt>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              “Alex took our vague concept for an online ordering system and turned it into an elegant, blazing fast store in under three weeks. Our mobile sales jumped immediately. Highly communicative, dependable, and technically skilled.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div class="author-info">
+                <span class="author-name">Marcus Reed</span>
+                <span class="author-title">Founder, Artisan Bakehouse</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card tilt-card" data-tilt>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              “During his internship, Alex consistently operated at the level of an engineer with several years of experience. He asked the right questions, wrote clean modular code, and was never afraid to dig into challenging bugs. Any engineering team would be lucky to have him.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SC</div>
+              <div class="author-info">
+                <span class="author-name">Sarah Chen</span>
+                <span class="author-title">Senior Engineering Manager, CloudSync Labs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card tilt-card" data-tilt>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              “As a non-technical founder, finding someone who speaks plain English without condescending jargon was refreshing. Alex gave us daily video progress updates and delivered exactly what we agreed upon ahead of schedule.”
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EP</div>
+              <div class="author-info">
+                <span class="author-name">Elena Patel</span>
+                <span class="author-title">Co-Founder, Solis Energy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me & Origin Story -->
+    <section class="section-about" id="about">
+      <div class="container about-layout">
+        <div class="about-visual">
+          <div class="about-card-frame">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Collaboration workspace" class="about-image" loading="lazy">
+            <div class="about-floating-stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-text">Commitment to clean code &amp; reliable delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-eyebrow">The Story</span>
+          <h2 class="section-title">From tinkering after school to shipping software for clients worldwide.</h2>
+          
+          <div class="about-prose">
+            <p>
+              I started coding at age 14 because I wanted to build tools that solved my own day-to-day problems. What began as modifying game scripts and building simple calculators evolved into deep obsession with clean software design, system architecture, and performance.
+            </p>
+            <p>
+              Over the last three years, as a "teenlancer" and self-driven developer, I turned that obsession into real-world freelance projects and competitive hackathon projects. I don't just write code; I care about <em>why</em> the code exists: helping a local business generate bookings, giving an early-stage startup an MVP they can pitch to investors, or making an interface accessible to people with disabilities.
+            </p>
+            <p>
+              When I’m not coding, you’ll find me contributing to open-source toolkits, experimenting with new browser APIs, running 5k trail routes, or mentoring peers who want to learn programming.
+            </p>
+          </div>
+
+          <!-- Quick facts / values checklist -->
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">⏱️</span>
+              <div>
+                <strong>Respect for Deadlines:</strong> If I say Friday at 3 PM, it’s done Friday at 3 PM.
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🧹</span>
+              <div>
+                <strong>Maintainable Codebase:</strong> Written for the next developer who will read it.
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">💬</span>
+              <div>
+                <strong>No Ghosting Guarantee:</strong> Same-day replies to emails and messages.
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn-primary" id="resume-download-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>View &amp; Print Official Resume</span>
+            </a>
+            <a href="#contact" class="btn-secondary">Message Me Directly</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Project Inquiry Section -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-info-col">
+            <span class="section-eyebrow">Get In Touch</span>
+            <h2 class="contact-heading">Let’s build something great together.</h2>
+            <p class="contact-sub">
+              Whether you are an engineering team looking for a proactive intern, or a founder needing a high-speed MVP, my inbox is open.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:alex.rivera.dev@example.com" class="method-value" id="contact-email-link">alex.rivera.dev@example.com</a>
+                </div>
+                <button type="button" class="btn-copy-inline" id="copy-email-btn" title="Copy email address" aria-label="Copy email address to clipboard">
+                  Copy
+                </button>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Expected Response Time</span>
+                  <span class="method-value">Within 12 hours (Weekdays &amp; Weekends)</span>
+                </div>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Location &amp; Work Eligibility</span>
+                  <span class="method-value">Remote &bull; Ready for Global &amp; US/Canada/EU Teams</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Bar -->
+            <div class="social-links-row">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>X / Twitter</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Inquiry Form -->
+          <div class="contact-form-col">
+            <div class="inquiry-form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Fill in your requirements below and I’ll get right back to you.</p>
+
+              <form id="contact-form" novalidate>
+                <!-- Project Type Chip Selector -->
+                <div class="form-group">
+                  <label class="form-label" id="opportunity-type-label">Opportunity / Project Type</label>
+                  <div class="chips-container" role="radiogroup" aria-labelledby="opportunity-type-label">
+                    <button type="button" class="chip active" role="radio" aria-checked="true" data-type="Internship Inquiry">
+                      Internship Inquiry
+                    </button>
+                    <button type="button" class="chip" role="radio" aria-checked="false" data-type="Freelance Project">
+                      Freelance Web App
+                    </button>
+                    <button type="button" class="chip" role="radio" aria-checked="false" data-type="Landing Page">
+                      Landing Page / UI
+                    </button>
+                    <button type="button" class="chip" role="radio" aria-checked="false" data-type="Quick Consultation">
+                      Code Audit / Other
+                    </button>
+                  </div>
+                  <input type="hidden" name="project_type" id="project_type_input" value="Internship Inquiry">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="sender_name" class="form-label">Your Name <span class="required-asterisk">*</span></label>
+                    <input type="text" id="sender_name" name="sender_name" class="form-input" placeholder="e.g. Jane Doe" required>
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="sender_email" class="form-label">Email Address <span class="required-asterisk">*</span></label>
+                    <input type="email" id="sender_email" name="sender_email" class="form-input" placeholder="jane@company.com" required>
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender_message" class="form-label">Project Details or Role Overview <span class="required-asterisk">*</span></label>
+                  <textarea id="sender_message" name="sender_message" rows="4" class="form-textarea" placeholder="Tell me about what you are building, timeline, or internship requirements..." required></textarea>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-primary btn-block btn-submit" id="submit-btn">
+                  <span class="submit-text">Send Message</span>
+                  <span class="submit-spinner" hidden aria-hidden="true"></span>
+                </button>
+
+                <p class="form-disclaimer">
+                  🔒 No spam, ever. Your information is delivered directly to my private inbox.
+                </p>
+              </form>
+
+              <!-- Form Success State (hidden initially) -->
+              <div class="form-success-banner" id="form-success" hidden>
+                <div class="success-icon">✓</div>
+                <h4 class="success-title">Message Received!</h4>
+                <p class="success-desc">
+                  Thanks for reaching out! I’ve received your note and will review your project details promptly within 12 hours.
+                </p>
+                <button type="button" class="btn-secondary btn-sm" id="send-another-btn">Send Another Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-monogram sm">AR</span>
+          <span class="footer-copy">&copy; <span id="current-year">2026</span> Alex Rivera. Built with clean semantic code.</span>
+        </div>
+        <p class="footer-tagline">Crafted for freelancers, teenlancers, and early-career developers looking to stand out.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-local-time">
+          <span class="time-clock-icon">🕒</span>
+          <span>Local Time: <span id="live-clock">--:--:--</span> (UTC-5)</span>
+        </div>
+        <div class="footer-status">
+          <span class="indicator-green"></span>
+          <span>Ready for new challenges</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Case Study Dialog Modal -->
+  <dialog class="case-study-modal" id="case-study-dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog-content">
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <span class="modal-category" id="modal-category">Category</span>
+          <h2 class="modal-title" id="modal-title">Project Name</h2>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close case study details">
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img src="" alt="" id="modal-hero-img" class="modal-image">
+        </div>
+
+        <div class="modal-grid-details">
+          <div class="modal-col-main">
+            <h3 class="modal-section-h3">The Problem &amp; Opportunity</h3>
+            <p id="modal-problem" class="modal-text">Problem description here...</p>
+
+            <h3 class="modal-section-h3">Engineering &amp; Architectural Decisions</h3>
+            <p id="modal-architecture" class="modal-text">Architecture description here...</p>
+
+            <h3 class="modal-section-h3">Measurable Results &amp; Impact</h3>
+            <ul id="modal-results-list" class="modal-results-list">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+
+          <div class="modal-col-meta">
+            <div class="meta-box">
+              <span class="meta-box-label">Client / Context</span>
+              <span class="meta-box-val" id="modal-client-val">Client Name</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-box-label">Timeline / Duration</span>
+              <span class="meta-box-val" id="modal-timeline-val">3 Weeks</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-box-label">My Role</span>
+              <span class="meta-box-val" id="modal-role-val">Sole Full-Stack Developer</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-box-label">Core Technologies</span>
+              <div class="modal-tech-pills" id="modal-tech-list">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <div class="modal-cta-box">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary btn-block btn-sm" id="modal-live-link">
+                View Live Deployment
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-block btn-sm" id="modal-code-link">
+                Review GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Interactive Teenlancer / Freelancer Profile Customizer Modal -->
+  <dialog class="customizer-modal" id="customizer-dialog" aria-labelledby="customizer-title">
+    <div class="modal-dialog-content customizer-content">
+      <div class="modal-header">
+        <div>
+          <span class="modal-category">Interactive Tool</span>
+          <h2 class="modal-title" id="customizer-title">Personalize This Portfolio</h2>
+        </div>
+        <button type="button" class="modal-close-btn" id="customizer-close-btn" aria-label="Close customizer">
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-body customizer-body">
+        <p class="customizer-intro">
+          Are you a student, teenlancer, or independent freelancer? Customize this template with your own name, headline, email, and target role right now to see instant live updates!
+        </p>
+
+        <form id="customizer-form" class="customizer-form-grid">
+          <div class="form-group">
+            <label for="custom_name" class="form-label">Full Name</label>
+            <input type="text" id="custom_name" class="form-input" value="Alex Rivera">
+          </div>
+
+          <div class="form-group">
+            <label for="custom_role" class="form-label">Professional Role / Title</label>
+            <input type="text" id="custom_role" class="form-input" value="Full-Stack &amp; Frontend Engineer">
+          </div>
+
+          <div class="form-group">
+            <label for="custom_headline" class="form-label">Hero Headline</label>
+            <input type="text" id="custom_headline" class="form-input" value="I build fast, reliable web applications that turn ideas into working software.">
+          </div>
+
+          <div class="form-group">
+            <label for="custom_email" class="form-label">Your Email Address</label>
+            <input type="email" id="custom_email" class="form-input" value="alex.rivera.dev@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="custom_status" class="form-label">Availability Status</label>
+            <input type="text" id="custom_status" class="form-input" value="Available for Summer/Fall 2026 Internships &amp; Freelance Projects">
+          </div>
+
+          <div class="form-group">
+            <label for="custom_location" class="form-label">Location / Timezone</label>
+            <input type="text" id="custom_location" class="form-input" value="Remote / Global (UTC-5)">
+          </div>
+
+          <div class="customizer-actions">
+            <button type="submit" class="btn-primary">Apply Changes to Page</button>
+            <button type="button" class="btn-secondary" id="customizer-reset-btn">Reset Defaults</button>
+            <button type="button" class="btn-secondary" id="customizer-export-btn">Export Config JSON</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Live Toast Notification Element -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Notification message</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
